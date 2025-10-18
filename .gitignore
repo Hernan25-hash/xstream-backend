@@ -1,8 +1,20 @@
-# Node
+# Node modules
 node_modules/
+
+# Environment and log files
 .env
 *.log
 
-# Secrets
+# Secrets and credentials
 secrets/
 firebase-service-account.json
+firebase-service-account*.json
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Build and cache files
+dist/
+build/
+.cache/
