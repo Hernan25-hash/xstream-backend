@@ -1,6 +1,6 @@
 {
-  "name": "seo-backend",
-  "version": "1.0.0",
+  "name": "xstream-seo-backend",
+  "version": "1.0.1",
   "description": "Node.js + Express backend for generating and storing SEO metadata in Firebase Firestore.",
   "main": "server.js",
   "scripts": {
@@ -16,15 +16,18 @@
     "api",
     "backend"
   ],
-  "author": "Your Name",
-  "license": "ISC",
+  "author": "Hernan25-hash",
+  "license": "MIT",
   "dependencies": {
     "cors": "^2.8.5",
-    "dotenv": "^17.2.3",
-    "express": "^5.1.0",
-    "firebase-admin": "^13.5.0"
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "firebase-admin": "^13.0.2"
   },
   "devDependencies": {
-    "nodemon": "^3.1.10"
+    "nodemon": "^3.1.5"
+  },
+  "engines": {
+    "node": ">=18.0.0"
   }
 }

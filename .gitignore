@@ -1,20 +1,30 @@
-# Node modules
+# ================================
+# 📦 Node Modules
+# ================================
 node_modules/
 
-# Environment and log files
+# ================================
+# ⚙️ Environment & Log Files
+# ================================
 .env
 *.log
 
-# Secrets and credentials
+# ================================
+# 🔒 Secrets & Credentials
+# ================================
 secrets/
 firebase-service-account.json
 firebase-service-account*.json
 
-# System files
+# ================================
+# 💻 System Files
+# ================================
 .DS_Store
 Thumbs.db
 
-# Build and cache files
+# ================================
+# 🏗️ Build & Cache Files
+# ================================
 dist/
 build/
 .cache/
