@@ -125,6 +125,28 @@ app.get("/generate-full-seo", async (req, res) => {
 });
 
 // ==========================
+// ✅ Firestore Connection Test
+// ==========================
+app.get("/test-firestore", async (req, res) => {
+  try {
+    const testRef = db.collection("test").doc("connection-check");
+    await testRef.set({
+      message: "Firestore connection successful",
+      timestamp: new Date().toISOString(),
+    });
+
+    const doc = await testRef.get();
+    res.json({
+      success: true,
+      data: doc.data(),
+    });
+  } catch (err) {
+    console.error("❌ Firestore test failed:", err);
+    res.status(500).json({ success: false, error: err.message });
+  }
+});
+
+// ==========================
 // ✅ Health check
 // ==========================
 app.get("/", (req, res) => {
